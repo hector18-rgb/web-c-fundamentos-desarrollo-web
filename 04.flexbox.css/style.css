@@ -1,0 +1,148 @@
+/* Reset básico */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e7eb; /* diferente a lightgray */
+font-family: Arial, Helvetica, sans-serif;
+padding: 24px;
+}
+
+/* Títulos */
+.titulo {
+margin: 22px 0;
+text-align: center;
+color: #111827;
+}
+
+.separador {
+margin: 28px auto;
+width: 85%;
+border: none;
+border-top: 2px solid #cbd5e1;
+}
+
+/* =======================
+CARD (Flexbox)
+======================= */
+
+.card img {
+  display: block; /* mejor práctica que display:flex en img */
+}
+
+.card {
+display: flex;
+background-color: #ffffff;
+border-radius: 12px;
+  width: 720px; /* cambiado */
+margin: 0 auto;
+overflow: hidden;
+border: 1px solid #d1d5db;
+box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card-image img {
+  width: 240px; /* cambiado */
+height: 100%;
+object-fit: cover;
+}
+
+.card-content {
+color: #374151;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 22px 26px;
+gap: 12px;
+}
+
+.card-title {
+font-size: 1.25rem;
+line-height: 1.25;
+}
+
+.card-text {
+font-size: 0.9rem;
+opacity: 0.9;
+}
+
+.card-footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 6px;
+}
+
+.card-user-info {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.avatar {
+width: 42px;
+height: 42px;
+border-radius: 50%;
+}
+
+.user-name {
+font-weight: 700;
+font-size: 0.95rem;
+}
+
+.user-date {
+font-size: 0.85rem;
+opacity: 0.75;
+}
+
+.tag {
+background-color: #111827;
+color: white;
+padding: 8px 12px;
+border-radius: 999px;
+font-size: 0.85rem;
+}
+
+/* =======================
+FLEXBOX (contenedor)
+======================= */
+
+.contenedor-flexible {
+  /* Flexbox */
+display: flex;
+flex-direction: row;
+  justify-content: space-around; /* cambiado */
+  align-items: center; /* cambiado */
+  flex-wrap: wrap; /* cambiado */
+gap: 14px;
+
+  background-color: #7c3aed; /* diferente */
+border: 2px solid #111827;
+  width: 720px; /* similar al card */
+  min-height: 260px; /* más práctico */
+margin: 0 auto;
+padding: 16px;
+border-radius: 12px;
+color: white;
+}
+
+.boxy {
+  width: 140px; /* en lugar de 50% */
+height: 85px;
+  background-color: #f59e0b; /* diferente */
+border: 2px solid #111827;
+font-size: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
+
+/* Colores opcionales por clase (solo para distinguir) */
+.pato { background-color: #fb7185; }
+.foca { background-color: #60a5fa; }
+.vaca { background-color: #34d399; }
+.perro { background-color: #f59e0b; }
