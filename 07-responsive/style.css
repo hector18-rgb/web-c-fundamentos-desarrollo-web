@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+/* Base (Desktop / default) */
+.topbar{
+  padding: 18px;
+  background: #111827;
+  color: #fff;
+  text-align: center;
+}
+
+.box {
+  width: 100vw;
+  height: calc(100vh - 74px);
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  color: #fff;
+}
+
+.card{
+  width: min(700px, 100%);
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.card h2{
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.card p{
+  opacity: .95;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.chips{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chips span{
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* <= 1200px (Laptop / tablet grande) */
+@media screen and (max-width: 1200px) {
+  .box {
+    background-color: rgb(153, 255, 0);
+    color: rgb(81, 131, 7);
+    font-family: cursive;
+    align-items: flex-start;
+  }
+
+  .topbar{
+    background: #0f172a;
+  }
+}
+
+/* <= 768px (Tablet) */
+@media screen and (max-width: 768px) {
+  .box {
+    background-color: rgb(2, 247, 255);
+    color: rgb(2, 130, 135);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    align-items: flex-end;
+  }
+
+  .card h2{
+    font-size: 1.7rem;
+  }
+}
+
+/* <= 576px (Mobile) */
+@media screen and (max-width: 576px) {
+  .box {
+    background-color: rgb(240, 121, 23);
+    color: rgb(237, 220, 206);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    align-items: center;
+  }
+
+  .topbar p{
+    font-size: .9rem;
+    opacity: .9;
+  }
+}
