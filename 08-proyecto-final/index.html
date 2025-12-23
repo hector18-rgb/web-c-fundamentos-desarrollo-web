@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La nutrición, la medicina del futuro</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@200..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (Flexbox) -->
+  <header class="header">
+    <div class="container header__content">
+      <a class="brand" href="#inicio">
+        <img src="./assets/logowebp.png" alt="Logo" class="brand__logo">
+        <span class="brand__name">Proyecto 8 Final</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#habitos">Hábitos</a>
+        <a href="#plan">Plan</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="#contacto">Agenda</a>
+        <a class="btn btn--solid" href="#plan">Ver plan</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / BANNER -->
+  <main id="inicio" class="hero">
+    <div class="container hero__content">
+      <div class="hero__info">
+        <h1 class="hero__title science-gothic">
+          La nutrición, la medicina del futuro
+        </h1>
+        <p class="hero__text">
+          Alimentarte mejor no es “dieta”. Es estrategia: energía, composición corporal,
+          salud metabólica y prevención. Este sitio integra CSS (herencia, box model),
+          Flexbox, Grid, Position y Responsive.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#beneficios">Ver beneficios</a>
+          <a class="btn btn--ghost" href="#contacto">Contactar</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <p class="stat__num">4</p>
+            <p class="stat__txt">Comidas/día</p>
+          </div>
+          <div class="stat">
+            <p class="stat__num">+Prote</p>
+            <p class="stat__txt">Enfoque muscular</p>
+          </div>
+          <div class="stat">
+            <p class="stat__num">MG</p>
+            <p class="stat__txt">Cena ligera</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <!-- POSITION: etiqueta -->
+        <div class="badge">POSITION</div>
+
+        <div class="hero__card">
+          <p class="hero__cardTitle">Idea clave</p>
+          <p class="hero__cardText">
+            “Lo que comes hoy es tu salud de mañana”. Un plan simple, consistente y medible
+            gana a cualquier plan perfecto que no sostienes.
+          </p>
+          <div class="hero__pillRow">
+            <span class="pill">Energía</span>
+            <span class="pill">Hábitos</span>
+            <span class="pill">Rendimiento</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- BENEFICIOS (Cards: herencia/especificidad) -->
+  <section id="beneficios" class="section">
+    <div class="container">
+      <h2 class="section__title science-gothic">Beneficios reales</h2>
+      <p class="section__subtitle">
+        Cards para demostrar herencia, clase, id y <code>!important</code>.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <img class="card__img" src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Comida saludable">
+          <div class="card__body">
+            <h3 id="unicoBox" class="box card__title science-gothic">
+              Control de energía y saciedad
+            </h3>
+            <p class="card__text">
+              Mejor distribución de macros, mejores elecciones y porciones prácticas para tu rutina.
+            </p>
+            <div class="card__footer">
+              <div class="card__user">
+                <div class="avatar">NF</div>
+                <div>
+                  <p class="card__name">Nutrición Futuro</p>
+                  <span class="card__date">Actualizado</span>
+                </div>
+              </div>
+              <span class="pill">Salud</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__img" src="https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Entrenamiento">
+          <div class="card__body">
+            <h3 class="box card__title science-gothic">Masa muscular con estructura</h3>
+            <p class="card__text">
+              Proteína suficiente, timing práctico y comidas rápidas para sostener tu rendimiento.
+            </p>
+            <div class="card__footer">
+              <div class="card__user">
+                <div class="avatar">NF</div>
+                <div>
+                  <p class="card__name">Nutrición Futuro</p>
+                  <span class="card__date">Plan semanal</span>
+                </div>
+              </div>
+              <span class="pill">Fitness</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HÁBITOS (Flexbox) -->
+  <section id="habitos" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title science-gothic">Hábitos (Flexbox)</h2>
+      <p class="section__subtitle">Contenedor flexible con wrap, gap y alineación.</p>
+
+      <div class="flex-demo">
+        <div class="flex-item">Agua + electrolitos</div>
+        <div class="flex-item">Proteína en cada comida</div>
+        <div class="flex-item">Fibra diaria</div>
+        <div class="flex-item">Sueño 7–8h</div>
+        <div class="flex-item">Cena ligera</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAN (Grid) -->
+  <section id="plan" class="section">
+    <div class="container">
+      <h2 class="section__title science-gothic">Plan rápido (CSS Grid)</h2>
+      <p class="section__subtitle">
+        Ejemplo de cuadrícula con <code>repeat(3, 1fr)</code> y <code>gap</code>.
+      </p>
+
+      <div class="grid-demo">
+        <div class="grid-box">
+          <p class="grid-title">Desayuno</p>
+          <p class="grid-text">Avena + yogurt/queso cottage + fruta</p>
+        </div>
+        <div class="grid-box">
+          <p class="grid-title">Comida</p>
+          <p class="grid-text">Pollo/atún/sardina + arroz + ensalada</p>
+        </div>
+        <div class="grid-box">
+          <p class="grid-title">Cena</p>
+          <p class="grid-text">Huevos + verduras + aguacate</p>
+        </div>
+        <div class="grid-box">
+          <p class="grid-title">Snack</p>
+          <p class="grid-text">Fruta + nueces o yogurt</p>
+        </div>
+        <div class="grid-box">
+          <p class="grid-title">Meta</p>
+          <p class="grid-text">Consistencia &gt; perfección</p>
+        </div>
+        <div class="grid-box">
+          <p class="grid-title">Check</p>
+          <p class="grid-text">Prote + fibra + agua</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title science-gothic">Contacto</h2>
+      <p class="section__subtitle">Formulario simple (estructura).</p>
+
+      <form class="form">
+        <input class="input" type="text" placeholder="Nombre">
+        <input class="input" type="email" placeholder="Correo">
+        <textarea class="input" rows="4" placeholder="Mensaje"></textarea>
+        <button class="btn btn--solid" type="button">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© 2025 - La nutrición, la medicina del futuro | Héctor</p>
+      <div class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#plan">Plan</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- POSITION fixed -->
+  <a class="float-btn" href="#inicio" aria-label="Volver arriba">↑</a>
+
+</body>
+</html>
