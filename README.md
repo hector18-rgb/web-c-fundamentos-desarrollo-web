@@ -59,4 +59,4 @@ En el proyecto final se desarrolla una página web propia integrando todos los c
 ---
 
 ## ✍️ Autor
-Proyecto desarrollado por **Héctor Martínez** como parte de su formación en desarrollo web.
+Proyecto desarrollado por **Héctor Martínez** como parte de mi formación en desarrollo web.
